@@ -23,16 +23,16 @@ public class AvatarBendingIndicator {
                 }
             }
             if (index != -1) {
-                System.out.println(name.get(index) + " is: " + element.get(index));
+                System.out.println("\n"+ name.get(index) + " is: " + element.get(index));
             } else {
-                System.out.println(input + " is not in \"Avatar the Last AirBender\"");
+                System.out.println("\n"+ input + " is not in \"Avatar the Last AirBender\"");
             }
             System.out.print("\nDo you want to enter another name? y/n: ");
-            response = scanner.nextLine().toLowerCase(); // Convert response to lowercase
+            response = kb.nextLine().toLowerCase();
             if (response.equals("n") || response.equals("no")) {
-                System.out.println("Air...Water...Earth...Fire...GoodBye!");
+                System.out.println("\nAir...Water...Earth...Fire...GoodBye!");
             }
         } while (response.equals("y") || response.equals("yes"));
-        scanner.close();
+        kb.close();
     }
 }
