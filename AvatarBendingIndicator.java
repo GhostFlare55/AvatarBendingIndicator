@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AvatarBendingIndicator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner kb = new Scanner(System.in);
         ArrayList<String> name = new ArrayList<>();
         ArrayList<String> element = new ArrayList<>();
         Collections.addAll(name, "Aang", "Sokka", "Toph", "Ty Lee", "Hakoda", "Roku", "Kyoshi", "Yangchen", "Momo", "Kuruk", "Zuko", "Iroh", "Appa", "Suki", "Mai", "Kitara", "Azula", "Ozai", "Sozin", "Bumi", "Yue", "Gyatso");
@@ -14,19 +14,25 @@ public class AvatarBendingIndicator {
         String response;
         do {
             System.out.print("Enter a famous character from \"Avatar the Last AirBender\": ");
-            String input = scanner.nextLine();
-            int index = name.indexOf(input);
+            String input = kb.nextLine().toLowerCase();
+            int index = -1;
+            for (int i = 0; i < name.size(); i++) {
+                if (name.get(i).equalsIgnoreCase(input)) {
+                    index = i;
+                    break;
+                }
+            }
             if (index != -1) {
-                System.out.println(input + " is: " + element.get(index));
+                System.out.println(name.get(index) + " is: " + element.get(index));
             } else {
                 System.out.println(input + " is not in \"Avatar the Last AirBender\"");
             }
             System.out.print("\nDo you want to enter another name? y/n: ");
-            response = scanner.nextLine();
-            if (response.equalsIgnoreCase("n") || response.equalsIgnoreCase("no")) {
+            response = scanner.nextLine().toLowerCase(); // Convert response to lowercase
+            if (response.equals("n") || response.equals("no")) {
                 System.out.println("Air...Water...Earth...Fire...GoodBye!");
             }
-        } while (response.equalsIgnoreCase("y") || response.equalsIgnoreCase("yes"));
+        } while (response.equals("y") || response.equals("yes"));
         scanner.close();
     }
 }
