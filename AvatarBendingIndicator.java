@@ -27,12 +27,12 @@ public class AvatarBendingIndicator {
             } else {
                 System.out.println("\n"+ input + " is not in \"Avatar the Last AirBender\"");
             }
-            System.out.print("\nDo you want to enter another name? y/n: ");
+            System.out.print("\nDo you want to enter another name? yes/no: ");
             response = kb.nextLine().toLowerCase();
-            if (response.equals("n") || response.equals("no")) {
+            if (response.equalsIgnoreCase("n") || response.equalsIgnoreCase("no")) {
                 System.out.println("\nAir...Water...Earth...Fire...GoodBye!");
             }
-        } while (response.equals("y") || response.equals("yes")); //Asking the player if they still want to play again
-        kb.close();
+        } while (response.equalsIgnoreCase("y") || response.equalsIgnoreCase("yes")); //Asking the player if they still want to play again
+        kb.close(); //Closing the scanner
     }
 }
