@@ -8,10 +8,10 @@ public class AvatarBendingIndicator {
         ArrayList<String> name = new ArrayList<>();
         ArrayList<String> elements = new ArrayList<>();
         //Arrays of names and elements added into a collection
-        Collections.addAll(name, "Aang", "Sokka", "Toph", "Ty Lee", "Hakoda", "Roku", "Kyoshi", "Yangchen", "Momo", "Kuruk", "Zuko", "Iroh", "Appa", "Suki", "Mai", "Kitara", "Azula", "Ozai", "Sozin", "Bumi", "Yue", "Gyatso", "Chey", "Hama", "Piandao", "Pakku");
+        Collections.addAll(name, "Aang", "Sokka", "Toph", "Ty Lee", "Hakoda", "Roku", "Kyoshi", "Yangchen", "Momo", "Kuruk", "Zuko", "Iroh", "Appa", "Suki", "Mai", "Kitara", "Azula", "Ozai", "Sozin", "Bumi", "Yue", "Gyatso", "Wan Shi Tong", "Chey", "Hama", "Piandao", "Pakku");
         Collections.addAll(elements, "Avatar from the Southern Air Temple", "Non-Bender from the Southern Water Tribe", "EarthBender from the Earth Nation", "Non-Bender from the Fire Nation", "Non-Bender from the Southern Water Tribe",
                 "Avatar from the Fire Nation", "Avatar from the Earth Nation", "Avatar from the Western Air Temple", "Aang's Animal Companion", "Avatar from the Northern Water Tribe", "FireBender from the Fire Nation", "FireBender of the White Lotus", "Aang's Animal Companion",
-                "Kyoshi Warrior", "Non-Bender from the Fire Nation", "WaterBender from the Southern Water Tribe", "FireBender from the Fire Nation", "Fire-Lord of the Fire Nation", "Ozai's Father (Past Fire-Lord)", "EarthBender of the White Lotus", "Moon Spirit", "AirBending Master from the Southern Air Temple", "FireBender of the White Lotus", "BloodBender from the Southern Water Tribe", "Swordsmen of the White Lotus", "WaterBender of the White Lotus");
+                "Kyoshi Warrior", "Non-Bender from the Fire Nation", "WaterBender from the Southern Water Tribe", "FireBender from the Fire Nation", "Fire-Lord of the Fire Nation", "Ozai's Father (Past Fire-Lord)", "EarthBender of the White Lotus", "Moon Spirit", "AirBending Master from the Southern Air Temple", "Spirit of Knowledge", "FireBender of the White Lotus", "BloodBender from the Southern Water Tribe", "Swordsmen of the White Lotus", "WaterBender of the White Lotus");
         String response;
         do {
             System.out.print("Enter a famous character from \"Avatar the Last AirBender\": ");
